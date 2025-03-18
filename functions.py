@@ -1,8 +1,9 @@
+import os
 import requests
 
 # SONAR_API_URL = "https://sonarcloud.io/projects/api/measures/component"
 SONAR_API_URL = "https://sonarcloud.io/api/measures/component"
-SONAR_TOKEN = "42818884d3261adb85be3b7fd6e03d8f2d4294cc"
+SONAR_TOKEN = os.environ.get('SONAR_TOKEN')
 
 def get_sonar_data(repo_name):
     """Fetches code coverage, code smells, and security hotspots from SonarQube."""
