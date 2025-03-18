@@ -1,6 +1,6 @@
 import requests
 
-SONAR_API_URL = "https://sonarqube.yourcompany.com/api/measures/component"
+SONAR_API_URL = "https://sonarcloud.io/projects/api/measures/component"
 SONAR_TOKEN = "your_sonarqube_api_token"
 
 def get_sonar_data(repo_name):
